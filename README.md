@@ -4,7 +4,7 @@ Online Shop API enables users to add, delete, and update orders. Developed using
 
 ## Setup
 Clone the project to your local machine:
-`git clone https://github.com/HilalKocak/DjangoOnlineShop-BackendApp`
+```git clone https://github.com/HilalKocak/DjangoOnlineShop-BackendApp```
 
 ### Create your virtual environment
 `virtualenv venv`
