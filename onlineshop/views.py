@@ -4,6 +4,9 @@ from .serializer import OrderSerializer
 from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework.response import Response
+from django.core.mail import send_mail
+from django.core.mail import EmailMessage
+from backend.settings import EMAIL_HOST_USER
 
 class OrderView(APIView):
     def get(self, request):
@@ -31,6 +34,10 @@ class OrderView(APIView):
                'data': {},
                'message': 'Something went wrong while fetching orders data'
             }, status=status.HTTP_400_BAD_REQUEST)
+            subject = "New Order is Placed"
+            message = f"Dear customer {data['customer_name']} your orders is placed. Thanks for order."
+            recipient_list = [data['customer_email']]
+            send_mail(subject, message, EMAIL_HOST_USER, recipient_list, fail_silently=True)
 
             serializer.save()
             return Response({
@@ -96,4 +103,4 @@ class OrderView(APIView):
                'message': 'Something went wrong to deleting order'
             }, status=status.HTTP_400_BAD_REQUEST)
        
-         
+        
