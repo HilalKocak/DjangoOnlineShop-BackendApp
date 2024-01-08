@@ -91,5 +91,9 @@ class OrderView(APIView):
             }, status=status.HTTP_200_OK)
          
         except:
-            pass
+            return Response({
+               'data': {},
+               'message': 'Something went wrong to deleting order'
+            }, status=status.HTTP_400_BAD_REQUEST)
+       
          
