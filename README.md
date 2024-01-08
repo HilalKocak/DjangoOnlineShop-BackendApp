@@ -3,7 +3,7 @@
 Online Shop API enables users to add, delete, and update orders. Developed using Django REST Framework and tested with Postman.
 
 ## Setup
-Clone the project to your local machine:
+### Clone the project to your local machine:
 ```git clone https://github.com/HilalKocak/DjangoOnlineShop-BackendApp```
 
 ### Create your virtual environment
