@@ -70,7 +70,16 @@ WSGI_APPLICATION = "backend.wsgi.application"
 #         "NAME": BASE_DIR / "db.sqlite3",
 #     }
 # }
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'backendsample',
+        'USER': 'mysuperuser',
+        'PASSWORD': 'mysuperuser',
+        'HOST': 'backendsample.cx600qgai1wk.eu-north-1.rds.amazonaws.com', # from aws-rds
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation

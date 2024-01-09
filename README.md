@@ -1,6 +1,13 @@
 # Order Management API
 ## Overview
 Online Shop API enables users to add, delete, and update orders. Developed using Django REST Framework and tested with Postman.
+Used:
+- Django ORM
+- Django REST Framework
+- Postman
+- Swagger
+- AWS for Project Deployment
+- RDS PostgreSQL
 
 ## Setup
 ### Clone the project to your local machine
@@ -30,4 +37,7 @@ http://127.0.0.1:8000/swagger/schema/
 
 ### Check file in assets in project root to see POSTMAN collection 
 assets/backend.json
+
+### You can visit the link below to see deployed application
+https://django-online-shop-backend-app.vercel.app/admin
 
