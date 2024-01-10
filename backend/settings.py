@@ -20,6 +20,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     "django.contrib.admin",
+    "whitenoise.runserver_nostatic",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -32,6 +33,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -124,6 +126,18 @@ EMAIL_HOST_USER = "hhilalkocak@gmail.com"
 EMAIL_HOST_PASSWORD = "wgsd lmdy pner ipmp"
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+
+# AWS S3
+AWS_ACCESS_KEY_ID = 'AKIAVRUVROKXBKXOFE3Q'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'backendsample'
+AWS_S3_SIGNATURE_NAME = 's3v4',
+AWS_S3_REGION_NAME = 'eu-north-1'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL =  None
+AWS_S3_VERITY = True
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # Vercel Configuration
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')

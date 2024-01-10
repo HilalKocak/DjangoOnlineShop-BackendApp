@@ -8,6 +8,9 @@ Used:
 - Swagger
 - AWS for Project Deployment
 - RDS PostgreSQL
+- S3 Bucket for keeping static and media files
+- Gunicorn & Nginx in Production on AWS Ubuntu server
+
 
 ## Setup
 ### Clone the project to your local machine
