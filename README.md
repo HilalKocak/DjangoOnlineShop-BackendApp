@@ -6,11 +6,14 @@ Used:
 - Django REST Framework
 - Postman
 - Swagger
+- Vercel to deployment(https://django-online-shop-backend-app.vercel.app/admin/)
 - AWS for Project Deployment
 - RDS PostgreSQL
 - S3 Bucket for keeping static and media files
+- Deployment on AWS EC2
 - Gunicorn & Nginx in Production on AWS Ubuntu server
-
+- Domain Setup
+- SSL Certificate
 
 ## Setup
 ### Clone the project to your local machine
