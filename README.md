@@ -6,6 +6,7 @@ Used:
 - Django REST Framework
 - Postman
 - Swagger
+- Email Notification
 - Vercel to deployment(https://django-online-shop-backend-app.vercel.app/admin/)
 - AWS for Project Deployment
 - RDS PostgreSQL
