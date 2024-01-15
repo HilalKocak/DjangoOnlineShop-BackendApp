@@ -47,3 +47,4 @@ assets/backend.json
 ### You can visit the link below to see deployed application
 https://django-online-shop-backend-app.vercel.app/admin
 
+https://www.djangodeploy.online/admin/
