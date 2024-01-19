@@ -15,6 +15,8 @@ Used:
 - Gunicorn & Nginx in Production on AWS Ubuntu server
 - Domain Setup
 - SSL Certificate
+- CI/CD Pipeline using AWS CodePipeline | CodeDeploy 
+
 
 ## Setup
 ### Clone the project to your local machine
